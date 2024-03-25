@@ -13,10 +13,10 @@ const ContactList = () => {
 
   return (
     <ul className={css.contactList}>
-      {filteredContacts?.map(({ id, name, number }) => {
+      {filteredContacts?.map(({ id, name, phone }) => {
         return (
           <li className={css.contactItem} key={id}>
-            {name}: {number}
+            {name}: {phone}
             <button
               className={css.listItemBtn}
               id={id}
